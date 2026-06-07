@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="Ausflüge Neuhaus am Inn, Sehenswürdigkeiten Passau, Schärding Tagesausflug, Bayerischer Wald Hotel, Bad Füssing Therme Hotel, Inn Radweg Unterkunft, Golf Bad Griesbach Hotel, Schloss Neuhaus Inn, Aktivitäten Bayern Österreich, Kanufahren Inn, Rafting Passau">
+<meta name="description" content="Entdecken Sie die Umgebung von Hotel Alte Innbrücke: Passau Dom (10 km), Schärding Österreich (1 km), Bayerischer Wald, Bad Füssing Therme, Inn Radweg, Golf Bad Griesbach, Schloss Neuhaus. Ideal für Ausflüge in Bayern und Österreich.">
+<title>Aktivitäten & Ausflüge | Hotel Alte Innbrücke | Passau, Schärding, Bayerischer Wald</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --cream: #1A2B1A; --warm-white: #111111; --deep-forest: #0A0A0A; --forest: #0F1F0F;
+  --forest-mid: #2E7D32; --gold: #4CAF50; --gold-light: #81C784; --gold-pale: #1A2B1A;
+  --charcoal: #E8F5E9; --text-muted: #A5D6A7; --border: rgba(76,175,80,0.2);
+  --T: cubic-bezier(0.25,0.46,0.45,0.94);
+}
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { font-variant-numeric: lining-nums; font-feature-settings: "lnum"; font-family: 'DM Sans', sans-serif; background: var(--warm-white); color: var(--cream); overflow-x: hidden; }
+
+/* NAV */
+nav { position:fixed; top:0; left:0; right:0; z-index:100; height:70px; padding:0 3rem; display:flex; align-items:center; justify-content:space-between; background:rgba(10,10,10,0.96); backdrop-filter:blur(14px); border-bottom:1px solid var(--border); }
+.nav-logo { font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-weight:600; color:var(--cream); text-decoration:none; letter-spacing:0.04em; }
+.nav-logo span { color:var(--gold); }
+.nav-center { display:flex; align-items:center; gap:2rem; list-style:none; }
+.nav-center a { font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:500; color:var(--charcoal); text-decoration:none; transition:color 0.2s; }
+.nav-center a:hover, .nav-center a.active { color:var(--gold-light); }
+.nav-right { display:flex; align-items:center; gap:1rem; }
+.lang-switcher { display:flex; gap:0.4rem; }
+.lang-switcher a { font-size:0.7rem; letter-spacing:0.08em; color:var(--charcoal); text-decoration:none; padding:0.2rem 0.4rem; border:1px solid transparent; border-radius:2px; transition:all 0.2s; }
+.lang-switcher a:hover, .lang-switcher a.active { border-color:var(--gold); color:var(--cream); background:rgba(184,148,90,0.25); font-weight:500; }
+.btn-book { background:var(--deep-forest); color:var(--cream); padding:0.5rem 1.3rem; font-size:0.75rem; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none; border-radius:2px; transition:background 0.2s; }
+.btn-book:hover { background:var(--forest); }
+.btn-video-nav { display:flex; align-items:center; gap:0.4rem; font-size:0.75rem; color:var(--charcoal); text-decoration:none; letter-spacing:0.06em; transition:color 0.2s; }
+.btn-video-nav:hover { color:var(--cream); }
+.btn-video-nav svg { width:16px; height:16px; }
+
+/* PAGE HEADER */
+.page-header { padding-top:70px; background:var(--deep-forest); }
+.page-header-inner { padding:5rem 5rem 4rem; }
+.eyebrow { font-size:0.68rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold-light); margin-bottom:0.75rem; }
+.page-title { font-family:'Cormorant Garamond',serif; font-size:clamp(2.5rem,4vw,4rem); font-weight:300; color:var(--cream); line-height:1.1; }
+.page-title em { font-style:italic; color:var(--gold-light); }
+.page-sub { font-size:0.9rem; line-height:1.8; color:rgba(232,245,233,0.7); max-width:620px; margin-top:1.2rem; }
+
+/* INTRO STRIP */
+.intro-strip { background:var(--gold); padding:1.2rem 5rem; }
+.intro-strip p { font-size:0.82rem; color:var(--cream); font-weight:500; letter-spacing:0.06em; text-transform:uppercase; }
+
+/* ACTIVITY SECTION */
+.activity { padding:0; display:grid; grid-template-columns:1fr 1fr; min-height:480px; }
+.activity:nth-child(odd) .act-img { order:1; }
+.activity:nth-child(odd) .act-text { order:2; }
+.activity:nth-child(even) .act-img { order:2; }
+.activity:nth-child(even) .act-text { order:1; }
+.activity:nth-child(odd) { background:var(--warm-white); }
+.activity:nth-child(even) { background:var(--cream); }
+
+.act-img { overflow:hidden; position:relative; }
+.act-img img { width:100%; height:100%; object-fit:cover; transition:transform 8s var(--T); display:block; }
+.act-img:hover img { transform:scale(1.04); }
+.act-dist { position:absolute; top:1.5rem; left:1.5rem; background:rgba(28,43,30,0.88); backdrop-filter:blur(8px); border:1px solid rgba(184,148,90,0.3); padding:0.5rem 1rem; border-radius:2px; color:var(--cream); font-size:0.72rem; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; }
+.act-dist span { color:var(--gold-light); }
+
+.act-text { padding:4rem 5rem; display:flex; flex-direction:column; justify-content:center; }
+.act-num { font-family:'DM Sans',sans-serif; font-family:'Cormorant Garamond',serif; font-size:4rem; font-weight:300; color:var(--gold-pale); line-height:1; margin-bottom:1rem; }
+.act-title { font-family:'Cormorant Garamond',serif; font-size:clamp(1.8rem,2.5vw,2.4rem); font-weight:300; color:var(--cream); line-height:1.15; margin-bottom:1.2rem; }
+.act-title em { font-style:italic; color:var(--gold); }
+.act-body { font-size:0.87rem; line-height:1.85; color:var(--charcoal); }
+.act-tag { display:inline-block; margin-top:1.5rem; font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold-light); border:1px solid var(--forest-mid); padding:0.3rem 0.8rem; border-radius:1px; }
+
+/* CTA BAND */
+.cta-band { background:var(--deep-forest); padding:4rem 5rem; display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap; }
+.cta-band-text h2 { font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:300; color:var(--cream); }
+.cta-band-text h2 em { font-style:italic; color:var(--gold-light); }
+.cta-band-text p { font-size:0.85rem; color:rgba(247,243,237,0.55); margin-top:0.5rem; }
+.btn-gold { background:var(--gold); color:var(--cream); padding:0.9rem 2.5rem; font-size:0.82rem; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none; border-radius:2px; transition:background 0.2s; }
+.btn-gold:hover { background:var(--gold-light); }
+.btn-outline { border:1px solid rgba(184,148,90,0.4); color:var(--gold-light); padding:0.9rem 2rem; font-size:0.82rem; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none; border-radius:2px; transition:all 0.2s; display:inline-flex; align-items:center; gap:0.5rem; }
+.btn-outline:hover { border-color:var(--gold); color:var(--cream); }
+.btn-outline svg { width:16px; height:16px; }
+.cta-btns { display:flex; gap:1rem; flex-wrap:wrap; }
+
+/* CONTACT */
+.contact { background:var(--cream); padding:0; }
+.contact-inner { display:grid; grid-template-columns:1fr 1fr; min-height:440px; }
+.contact-left { padding:5rem; display:flex; flex-direction:column; justify-content:center; }
+.contact-left p { font-size:0.87rem; line-height:1.8; color:var(--charcoal); margin:1rem 0 2rem; }
+.contact-items { display:flex; flex-direction:column; gap:1.2rem; }
+.contact-item { display:flex; gap:0.8rem; align-items:flex-start; }
+.contact-icon { color:var(--gold-light); flex-shrink:0; margin-top:2px; }
+.contact-icon svg { width:18px; height:18px; stroke-width:1.5; }
+.contact-lbl { font-size:0.62rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--charcoal); }
+.contact-val { font-size:0.88rem; font-weight:500; color:var(--cream); }
+.contact-val a { color:inherit; text-decoration:none; }
+.contact-right { position:relative; overflow:hidden; }
+.contact-right iframe { width:100%; height:100%; border:none; }
+
+/* FOOTER */
+footer { background:var(--charcoal); color:rgba(247,243,237,0.45); padding:2.5rem 5rem; }
+.footer-inner { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.5rem; }
+.footer-brand { font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:300; color:var(--cream); }
+.footer-links { display:flex; gap:2rem; list-style:none; flex-wrap:wrap; }
+.footer-links a { font-size:0.75rem; color:rgba(247,243,237,0.4); text-decoration:none; transition:color 0.2s; }
+.footer-links a:hover { color:var(--cream); }
+.footer-social a { font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:rgba(247,243,237,0.4); text-decoration:none; }
+.footer-social a:hover { color:var(--gold-light); }
+
+/* VIDEO */
+.vmodal { position:fixed; inset:0; z-index:999; background:rgba(8,12,8,0.92); display:none; align-items:center; justify-content:center; backdrop-filter:blur(5px); }
+.vmodal.active { display:flex; }
+.vmodal-inner { position:relative; width:82vw; max-width:950px; }
+.vmodal-inner iframe { width:100%; aspect-ratio:16/9; border:none; }
+.vmodal-close { position:absolute; top:-3rem; right:0; background:none; border:1px solid rgba(247,243,237,0.25); color:var(--cream); cursor:pointer; width:34px; height:34px; display:flex; align-items:center; justify-content:center; border-radius:2px; font-size:1.1rem; }
+.vmodal-close:hover { border-color:var(--gold); color:var(--gold); }
+
+@media(max-width:1024px){
+  nav { padding:0 1.5rem; } .nav-center { display:none; }
+  .page-header-inner, .act-text, .cta-band, .contact-left, footer { padding-left:2rem; padding-right:2rem; }
+  .intro-strip { padding:1.2rem 2rem; }
+  .activity { grid-template-columns:1fr; min-height:auto; }
+  .activity:nth-child(odd) .act-img,
+  .activity:nth-child(even) .act-img { order:1; min-height:280px; }
+  .activity:nth-child(odd) .act-text,
+  .activity:nth-child(even) .act-text { order:2; padding:3rem 2rem; }
+  .contact-inner { grid-template-columns:1fr; }
+  .contact-right { min-height:300px; }
+}
+
+  /* SCROLL ANIMATIONS */
+  .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.65s var(--T), transform 0.65s var(--T); }
+  .reveal.visible { opacity:1; transform:translateY(0); }
+  .reveal-left { opacity:0; transform:translateX(-30px); transition:opacity 0.65s var(--T), transform 0.65s var(--T); }
+  .reveal-left.visible { opacity:1; transform:translateX(0); }
+  .reveal-right { opacity:0; transform:translateX(30px); transition:opacity 0.65s var(--T), transform 0.65s var(--T); }
+  .reveal-right.visible { opacity:1; transform:translateX(0); }
+  .reveal-scale { opacity:0; transform:scale(0.96); transition:opacity 0.65s var(--T), transform 0.65s var(--T); }
+  .reveal-scale.visible { opacity:1; transform:scale(1); }
+
+  /* ── MOBILE NAV ── */
+  .hamburger { display:none; margin-left:auto; flex-direction:column; gap:5px; cursor:pointer; padding:4px; background:none; border:none; z-index:200; }
+  .hamburger span { display:block; width:24px; height:2px; background:var(--deep-forest); transition:all 0.3s; border-radius:2px; }
+  .hamburger.open span:nth-child(1) { transform:rotate(45deg) translate(5px,5px); }
+  .hamburger.open span:nth-child(2) { opacity:0; }
+  .hamburger.open span:nth-child(3) { transform:rotate(-45deg) translate(5px,-5px); }
+
+  .mobile-menu { display:none; position:fixed; inset:0; top:70px; background:var(--warm-white); z-index:99; flex-direction:column; padding:2rem; gap:0; overflow-y:auto; }
+  .mobile-menu.open { display:flex; }
+  .mobile-menu a { display:flex; align-items:center; justify-content:space-between; padding:1.2rem 0; font-size:1.1rem; font-weight:500; color:var(--cream); text-decoration:none; border-bottom:1px solid var(--border); letter-spacing:0.04em; }
+  .mobile-menu a:last-child { border-bottom:none; }
+  .mobile-menu a svg { width:16px; height:16px; color:var(--gold); }
+  .mobile-menu-book { margin-top:2rem; background:var(--deep-forest); color:var(--cream) !important; padding:1rem 2rem; text-align:center; border-radius:2px; border:none !important; justify-content:center !important; }
+  .mobile-menu-lang { display:flex; gap:1rem; margin-top:1rem; padding-top:1rem; border-top:1px solid var(--border); }
+  .mobile-menu-lang a { font-size:0.8rem; color:var(--charcoal); text-decoration:none; padding:0.3rem 0.6rem; border:1px solid transparent; border-radius:2px; }
+  .mobile-menu-lang a.active { border-color:var(--gold); color:var(--cream); }
+  .mobile-menu-video { display:flex; align-items:center; gap:0.5rem; margin-top:0.5rem; color:var(--charcoal) !important; font-size:0.85rem !important; border-bottom:none !important; }
+  .mobile-menu-video svg { color:var(--charcoal) !important; }
+
+  @media(max-width:1024px) {
+    .hamburger { display:flex; }
+    .nav-center, .nav-right { display:none !important; }
+
+    /* HERO MOBILE */
+    .hero { grid-template-columns:1fr !important; min-height:100svh; }
+    .hero-left { padding:2rem 1.5rem 3rem; min-height:auto; }
+    .hero-right { min-height:280px; }
+    .hero-stats { gap:1.5rem; flex-wrap:wrap; }
+    .hero-btns { flex-direction:column; align-items:flex-start; gap:0.75rem; }
+
+    /* SECTIONS */
+    section { padding:3rem 1.5rem !important; }
+    .wichtig { padding:3rem 1.5rem !important; }
+    .amenities { padding:3rem 1.5rem !important; }
+
+    /* CHECKIN INFO */
+    .checkin-info-inner { grid-template-columns:1fr !important; gap:2rem; }
+    .checkin-times { flex-direction:column; }
+    .ci-box { border-right:none !important; border-bottom:1px solid var(--border); }
+    .ci-box:last-child { border-bottom:none; }
+    .checkin-btns { flex-direction:column; }
+
+    /* ROOMS GRID */
+    .rooms-grid { grid-template-columns:1fr !important; }
+    .rooms-header { flex-direction:column; align-items:flex-start; gap:1rem; }
+
+    /* STEPS */
+    .steps-grid { grid-template-columns:1fr 1fr !important; }
+    .steps-extra { grid-template-columns:1fr 1fr !important; }
+
+    /* WICHTIG */
+    .wichtig-grid { grid-template-columns:1fr !important; }
+    .wichtig-item { border-right:none !important; }
+
+    /* AMENITIES */
+    .amenities-grid { grid-template-columns:repeat(3,1fr) !important; }
+    .amenities-grid .amenity-item { border-bottom:1px solid var(--border) !important; border-right:1px solid var(--border) !important; }
+    .amenities-grid .amenity-item:nth-child(3n) { border-right:none !important; }
+    .amenities-grid .amenity-item:nth-child(4),
+    .amenities-grid .amenity-item:nth-child(5),
+    .amenities-grid .amenity-item:nth-child(6) { border-bottom:none !important; }
+    .amenities-grid .amenity-item { border-right:1px solid var(--border); border-bottom:1px solid var(--border); }
+    .amenities-grid .amenity-item:nth-child(3n) { border-right:none; }
+    .am-item { border-right:1px solid var(--border); }
+    .am-item:nth-child(3n) { border-right:none; }
+    .am-item:nth-child(n+4) { border-top:1px solid var(--border); }
+
+    /* ABOUT */
+    .about-inner { grid-template-columns:1fr !important; gap:2rem; }
+    .about-img-wrap { position:static !important; }
+    .about-img-wrap img { height:250px !important; }
+    .about-btns { flex-direction:column; }
+
+    /* FAQ */
+    .faq-inner { grid-template-columns:1fr !important; gap:2rem; }
+
+    /* REVIEWS */
+    .reviews-grid { grid-template-columns:1fr 1fr !important; }
+
+    /* CONTACT */
+    .contact { grid-template-columns:1fr !important; }
+    .contact-inner { grid-template-columns:1fr !important; }
+    .contact-left { padding:3rem 1.5rem !important; }
+    .contact-right { min-height:280px; }
+
+    /* LOCATION */
+    .location-inner { grid-template-columns:1fr !important; }
+    .location-text { padding:3rem 1.5rem !important; }
+    .location-map { min-height:280px; }
+
+    /* TICKER */
+    .checkin-strip { padding:1rem 1.5rem !important; flex-direction:column; align-items:flex-start; gap:0.75rem; }
+    .checkin-watch { flex-wrap:wrap; gap:1rem; }
+
+    /* CTA BAND */
+    .cta-band { padding:3rem 1.5rem !important; flex-direction:column; align-items:flex-start; }
+    .cta-btns { flex-direction:column; width:100%; }
+    .btn-gold, .btn-outline { text-align:center; justify-content:center; }
+
+    /* INFO BAND */
+    .info-band { padding:2rem 1.5rem !important; flex-direction:column; gap:1.5rem; }
+
+    /* FOOTER */
+    footer { padding:2rem 1.5rem !important; }
+    .footer-top { grid-template-columns:1fr 1fr !important; gap:2rem !important; }
+    .footer-inner { flex-direction:column; align-items:flex-start; gap:1.5rem; }
+    .footer-links { flex-wrap:wrap; gap:1rem; }
+
+    /* PROCESS STEPS */
+    .process-steps { grid-template-columns:1fr 1fr !important; }
+
+    /* ACTIVITIES */
+    .activity { grid-template-columns:1fr !important; min-height:auto; }
+    .activity .act-img { order:1 !important; min-height:240px; }
+    .activity .act-text { order:2 !important; padding:2.5rem 1.5rem !important; }
+
+    /* DIRECTIONS */
+    .directions-grid { grid-template-columns:1fr 1fr !important; }
+    .directions { padding:3rem 1.5rem !important; }
+
+    /* CHECKIN REMINDER */
+    .checkin-reminder { grid-template-columns:1fr !important; padding:3rem 1.5rem !important; gap:2rem; }
+    .time-grid { grid-template-columns:1fr 1fr; }
+
+    /* SOCIAL */
+    .social-section { padding:2.5rem 1.5rem !important; flex-direction:column; align-items:flex-start; }
+    .social-btns { flex-direction:column; width:100%; }
+    .social-btn { justify-content:center; }
+
+    /* CARDS */
+    .cards-grid { grid-template-columns:1fr 1fr !important; }
+    .card { border-right:1px solid rgba(184,148,90,0.15) !important; border-bottom:1px solid rgba(184,148,90,0.15); }
+    .card:nth-child(2n) { border-right:none !important; }
+
+    /* MAP */
+    .map-section { height:280px; }
+
+    /* PAGE HEADER */
+    .page-header-inner { padding:3rem 1.5rem 2rem !important; }
+
+    /* INTRO STRIP */
+    .intro-strip { padding:1.2rem 1.5rem !important; flex-direction:column; align-items:flex-start; gap:1rem; }
+
+    /* ROOM SECTIONS */
+    .room-section { padding:2.5rem 1.5rem !important; }
+    .room-header { flex-direction:column; align-items:flex-start; gap:1rem; }
+    .photo-grid.cols-4 { grid-template-columns:1fr 1fr !important; }
+    .photo-grid.cols-3 { grid-template-columns:1fr 1fr !important; }
+    .amenities-bar { grid-template-columns:1fr !important; }
+    .am-cell { border-right:none !important; border-bottom:1px solid var(--border); }
+    .am-cell:last-child { border-bottom:none; }
+
+    /* HERO CONTACT */
+    .hero { padding-top:70px; }
+    .hero-overlay { padding:0 1.5rem !important; }
+  }
+
+  @media(max-width:480px) {
+    .reviews-grid { grid-template-columns:1fr !important; }
+    .cards-grid { grid-template-columns:1fr !important; }
+    .card { border-right:none !important; }
+    .directions-grid { grid-template-columns:1fr !important; }
+    .steps-grid, .steps-extra { grid-template-columns:1fr !important; }
+    .process-steps { grid-template-columns:1fr !important; }
+    .amenities-grid { grid-template-columns:repeat(2,1fr) !important; }
+    .hero-stats { gap:1.5rem; }
+    .stat-num { font-size:1.5rem; }
+    .photo-grid.cols-4, .photo-grid.cols-3 { grid-template-columns:1fr !important; }
+  }
+
+
+  /* WORD WRAP FIX */
+  * { word-break: normal; overflow-wrap: break-word; }
+  p, span, div, li, td, h1, h2, h3 { max-width: 100%; }
+  .w-text, .wichtig-item, .reminder-item, .step-desc, .act-body, 
+  .sec-body, .section-body, .hero-sub, .page-sub, .about-block p,
+  .faq-a, .rev-text, .loc-text, .dir-desc, .card-sub { 
+    word-break: normal; 
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* CAROUSEL */
+  .carousel-section { background:var(--deep-forest); padding:5rem; overflow:hidden; }
+  .carousel-section .eyebrow { color:var(--gold-light); }
+  .carousel-section .sec-title { color:var(--cream); margin-bottom:3rem; }
+  .carousel-track-wrap { overflow:hidden; }
+  .carousel-track { display:flex; gap:1.5rem; transition:transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94); }
+  .rev-slide { flex:0 0 calc(33.333% - 1rem); background:rgba(45,74,50,0.6); border:1px solid rgba(184,148,90,0.15); padding:2rem; border-radius:2px; display:flex; flex-direction:column; gap:1rem; }
+  .rev-stars { color:var(--gold); font-size:0.9rem; }
+  .rev-quote { font-family:'Cormorant Garamond',serif; font-size:1rem; font-style:italic; color:rgba(247,243,237,0.82); line-height:1.7; flex:1; }
+  .rev-author { font-size:0.78rem; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:var(--gold-light); }
+  .rev-rating { font-size:0.7rem; color:rgba(247,243,237,0.35); }
+  .carousel-dots { display:flex; gap:0.5rem; justify-content:center; margin-top:2rem; }
+  .carousel-dot { width:6px; height:6px; border-radius:50%; background:rgba(184,148,90,0.3); border:none; cursor:pointer; padding:0; transition:background 0.2s; }
+  .carousel-dot.active { background:var(--gold); }
+  /* WHATSAPP */
+  .wa-btn { position:fixed; bottom:1.5rem; right:1.5rem; z-index:500; width:56px; height:56px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 20px rgba(37,211,102,0.4); text-decoration:none; transition:transform 0.2s; }
+  .wa-btn:hover { transform:scale(1.08); }
+  .wa-btn svg { width:30px; height:30px; fill:#fff; }
+  /* COOKIE */
+  .cookie-banner { position:fixed; bottom:0; left:0; right:0; z-index:600; background:var(--charcoal); color:rgba(247,243,237,0.8); padding:1.2rem 2rem; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap; border-top:1px solid rgba(184,148,90,0.2); font-size:0.82rem; line-height:1.6; }
+  .cookie-banner.hidden { display:none; }
+  .cookie-text a { color:var(--gold-light); }
+  .cookie-btns { display:flex; gap:0.75rem; flex-shrink:0; }
+  .cookie-accept { background:var(--gold); color:var(--cream); border:none; padding:0.6rem 1.4rem; font-size:0.78rem; font-weight:500; letter-spacing:0.06em; text-transform:uppercase; cursor:pointer; border-radius:2px; }
+  .cookie-decline { background:none; color:rgba(247,243,237,0.5); border:1px solid rgba(247,243,237,0.2); padding:0.6rem 1.2rem; font-size:0.78rem; cursor:pointer; border-radius:2px; }
+  @media(max-width:768px) {
+    .carousel-section { padding:3rem 1.5rem; }
+    .rev-slide { flex:0 0 85vw; }
+    .cookie-banner { padding:1rem 1.5rem; }
+  }
+
+
+  /* CAROUSEL INFINITE */
+  .carousel-section { background:var(--deep-forest); padding:5rem; overflow:hidden; }
+  .carousel-section .eyebrow { color:var(--gold-light); }
+  .carousel-section .sec-title { color:var(--cream); margin-bottom:3rem; }
+  .carousel-outer { overflow:hidden; position:relative; }
+  .carousel-inner { display:flex; gap:1.5rem; }
+  .carousel-inner.running { animation:scrollReviews 45s linear infinite; }
+  .carousel-inner:hover { animation-play-state:paused; }
+  @keyframes scrollReviews {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .rev-slide { flex:0 0 380px; background:rgba(45,74,50,0.6); border:1px solid rgba(184,148,90,0.15); padding:2rem; border-radius:2px; display:flex; flex-direction:column; gap:1rem; }
+  .rev-stars { color:var(--gold); font-size:0.9rem; }
+  .rev-quote { font-family:'Cormorant Garamond',serif; font-size:1rem; font-style:italic; color:rgba(247,243,237,0.82); line-height:1.7; flex:1; }
+  .rev-author { font-size:0.78rem; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:var(--gold-light); }
+  .rev-rating { font-size:0.7rem; color:rgba(247,243,237,0.35); }
+  @media(max-width:768px){
+    .carousel-section { padding:3rem 1.5rem; }
+    .rev-slide { flex:0 0 280px; }
+    .carousel-inner.running { animation-duration:28s; }
+  }
+
+
+
+/* ── DARK THEME OVERRIDES ── */
+body { background:#111111 !important; color:#E8F5E9 !important; }
+
+/* Nav */
+nav { background:rgba(17,17,17,0.96) !important; border-bottom-color:rgba(76,175,80,0.2) !important; }
+.nav-logo { color:#E8F5E9 !important; }
+.nav-logo span { color:#4CAF50 !important; }
+.nav-center a { color:#A5D6A7 !important; }
+.nav-center a:hover, .nav-center a.active { color:#81C784 !important; }
+.mobile-menu { background:#111111 !important; }
+.mobile-menu a { color:#E8F5E9 !important; border-bottom-color:rgba(76,175,80,0.15) !important; }
+.btn-book { background:#1A2B1A !important; color:#81C784 !important; border:1px solid #4CAF50 !important; }
+
+/* Toate sectiunile cu fundal deschis -> inchis */
+.rooms-section, .room-section, .faq-section, .about-section, .wichtig-section,
+.contact-strip, .contact-inner, .contact-left, .info-section, .steps-section,
+.cta-band, .cta-bottom, .checkin-cta, .intro-strip, .page-header,
+section, .section, [class*="-section"], .legal-content,
+.w-section, .loc-section { background:#111111 !important; }
+
+/* Alternating sections */
+.room-section:nth-child(odd) { background:#111111 !important; }
+.room-section:nth-child(even) { background:#0F1F0F !important; }
+
+/* Text - TOATE trebuie sa fie deschise */
+h1, h2, h3, h4, h5, h6,
+.sec-title, .page-title, .room-title, .contact-title,
+.hero-title, .act-title, .step-title, .dir-title,
+.faq-q, .am-label, .room-num, .eyebrow, .sec-eyebrow,
+.card-label, .c-lbl { color:#E8F5E9 !important; }
+
+p, span, div, li,
+.sec-body, .page-sub, .hero-sub, .act-body, .step-desc,
+.faq-a, .loc-text, .dir-desc, .r-text, .info-text,
+.card-sub, .c-val, .about-block p, .legal-content p,
+.legal-content li, .rev-quote { color:#C8E6C9 !important; }
+
+em { color:#81C784 !important; }
+
+/* Borders */
+.faq-item { border-bottom-color:rgba(76,175,80,0.2) !important; }
+.am-cell { border-color:rgba(76,175,80,0.2) !important; }
+.info-item { border-bottom-color:rgba(76,175,80,0.15) !important; }
+
+/* Icons */
+.am-cell svg, .c-icon svg { color:#4CAF50 !important; }
+
+/* Buttons */
+.btn-dark, .btn-gold { background:#2E7D32 !important; color:#E8F5E9 !important; }
+.btn-gold:hover { background:#388E3C !important; }
+.btn-outline { border-color:#4CAF50 !important; color:#81C784 !important; }
+
+/* Footer */
+footer { background:#0A0A0A !important; }
+.footer-brand { color:#E8F5E9 !important; }
+.footer-links a { color:#A5D6A7 !important; }
+.footer-links a:hover { color:#E8F5E9 !important; }
+
+/* Designed by bar */
+[style*="background:#0f1a10"] { background:#0A0A0A !important; }
+
+/* Cookie banner */
+.cookie-banner { background:#0A0A0A !important; }
+
+/* Photo placeholders */
+.photo-placeholder { background:#1A2B1A !important; }
+.photo-placeholder span { color:#A5D6A7 !important; }
+
+/* Time boxes in contact/checkin */
+.time-label { color:#A5D6A7 !important; }
+.time-val { color:#E8F5E9 !important; }
+.time-note { color:#81C784 !important; }
+
+/* Step numbers */
+.step-num { color:rgba(76,175,80,0.3) !important; }
+
+/* Legal pages */
+.legal-content h2 { color:#E8F5E9 !important; border-bottom-color:rgba(76,175,80,0.2) !important; }
+.legal-content a { color:#81C784 !important; }
+
+/* Cards in contact */
+.card { background:#0F1F0F !important; border-color:rgba(76,175,80,0.2) !important; }
+.card-val { color:#E8F5E9 !important; }
+.card-val a { color:#81C784 !important; }
+
+/* Reminder/wichtig section */
+.checkin-reminder { background:#0F1F0F !important; }
+.reminder-right { background:#0A0A0A !important; }
+
+/* Arrival block */
+.arrival-block { background:#0F1F0F !important; border-color:rgba(76,175,80,0.2) !important; }
+.arrival-address span { color:#E8F5E9 !important; }
+.arrival-phone a { color:#81C784 !important; }
+
+/* Social section */
+.social-section { background:#0F1F0F !important; }
+
+
+/* ── VISIBILITY FIXES ── */
+/* Strong/bold text in WICHTIG - verde pe verde fix */
+.w-text strong, .r-text strong, .wichtig-item strong,
+.reminder-item strong, li strong, p strong { 
+  color:#E8F5E9 !important; 
+}
+
+/* Btn secondary / outline - invizibil pe dark */
+.btn-secondary, .btn-outline, .btn-video, .btn-video-nav {
+  border-color:#4CAF50 !important;
+  color:#81C784 !important;
+  background:rgba(76,175,80,0.1) !important;
+}
+.btn-secondary:hover, .btn-outline:hover {
+  background:rgba(76,175,80,0.25) !important;
+  color:#E8F5E9 !important;
+}
+
+/* Check In Video button pe hero */
+.btn-video { 
+  border:1px solid #4CAF50 !important; 
+  color:#81C784 !important;
+  padding:0.8rem 1.8rem !important;
+  border-radius:2px !important;
+}
+.btn-video svg { color:#4CAF50 !important; }
+.btn-video-nav svg { color:#4CAF50 !important; }
+
+/* Orice text verde inchis pe fond verde inchis */
+.w-text, .r-text, .wichtig-item, .reminder-item div {
+  color:#C8E6C9 !important;
+}
+
+/* NICHT / NOT bold highlight */
+strong { color:#E8F5E9 !important; }
+
+
+/* ── MOBILE MENU VISIBILITY ── */
+.mobile-menu { background:#0A0A0A !important; border-top:1px solid rgba(76,175,80,0.3) !important; }
+.mobile-menu a { color:#E8F5E9 !important; font-size:1.1rem !important; border-bottom-color:rgba(76,175,80,0.2) !important; }
+.mobile-menu a svg { color:#4CAF50 !important; }
+.mobile-menu-book { background:#2E7D32 !important; color:#E8F5E9 !important; }
+.mobile-menu-lang a { color:#A5D6A7 !important; border-color:transparent !important; }
+.mobile-menu-lang a.active { border-color:#4CAF50 !important; color:#E8F5E9 !important; }
+.hamburger span { background:#E8F5E9 !important; }
+
+
+/* ── LANG SWITCHER VISIBILITY ── */
+.lang-switcher a { color:#A5D6A7 !important; border-color:transparent !important; }
+.lang-switcher a.active { 
+  border-color:#4CAF50 !important; 
+  color:#E8F5E9 !important; 
+  background:rgba(76,175,80,0.25) !important;
+  font-weight:600 !important;
+}
+.lang-switcher a:hover { 
+  border-color:#81C784 !important; 
+  color:#E8F5E9 !important;
+  background:rgba(76,175,80,0.15) !important;
+}
+.footer-inner .lang-switcher a { color:#A5D6A7 !important; }
+.footer-inner .lang-switcher a.active { 
+  border-color:#4CAF50 !important; 
+  color:#E8F5E9 !important;
+  background:rgba(76,175,80,0.25) !important;
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="de-startseite.html" class="nav-logo">Alte Innbrücke <span>Hotel</span></a>
+  <ul class="nav-center">
+    <li><a href="de-startseite.html">Startseite</a></li>
+    <li><a href="de-zimmer.html">Zimmer</a></li>
+    <li><a href="de-aktivitat.html" class="active">Aktivität</a></li>
+    <li><a href="de-kontakt.html">Kontakt</a></li>
+    <li><a href="de-checkin.html">Check-In</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#" class="btn-video-nav" onclick="openVideo();return false;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+      Check In Video
+    </a>
+    <div class="lang-switcher">
+      <a href="de-aktivitat.html" class="active">DE</a>
+      <a href="en-activities.html">EN</a>
+      <a href="ro-activitati.html">RO</a>
+    </div>
+    <a href="https://hotel-alte-innbrucke.pynbooking.direct/" target="_blank" class="btn-book">Buchen</a>
+  </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="de-startseite.html">Startseite <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+    <a href="de-zimmer.html">Zimmer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+    <a href="de-aktivitat.html">Aktivität <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+    <a href="de-checkin.html">Check-In <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+    <a href="de-kontakt.html">Kontakt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+    <a href="#" class="mobile-menu-video" onclick="openVideo();closeMobileMenu();return false;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+      Check In Video
+    </a>
+    <a href="https://hotel-alte-innbrucke.pynbooking.direct/" target="_blank" class="mobile-menu-book">Jetzt Buchen</a>
+    <div class="mobile-menu-lang">
+      <a href="de-aktivitat.html" class="active">DE</a>
+      <a href="en-activities.html">EN</a>
+      <a href="ro-activitati.html">RO</a>
+    </div>
+  </div>
+
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="eyebrow">Entdecken</p>
+    <h1 class="page-title">Das Hotel Alte Innbrücke empfiehlt sich für Gäste,<br>die gerne <em>wandern und Rad fahren</em></h1>
+    <p class="page-sub">Neuhaus am Inn ist ein typisch bayerisches Dorf mit schöner Landschaft und traditioneller Architektur. Das Passauer Land bietet zahlreiche Möglichkeiten, Freizeit zu verbringen, Eindrücke zu sammeln und schöne Momente zu erleben.</p>
+  </div>
+</div>
+
+<!-- INTRO STRIP -->
+<div class="intro-strip">
+  <p>Umgebung — Freizeitaktivitäten rund um Neuhaus am Inn</p>
+</div>
+
+<!-- ACTIVITY 1: Passau -->
+<div class="activity">
+  <div class="act-img reveal-scale">
+    <img src="passau-dom.jpg" alt="Passau Dreiflüsseeck">
+    <div class="act-dist">Entfernung: <span>ca. 10 km</span></div>
+  </div>
+  <div class="act-text reveal">
+    <div class="act-num">01</div>
+    <h2 class="act-title">Passau — Die <em>Dreiflüssestadt</em></h2>
+    <p class="act-body">Ein Ausflug nach Passau ist immer ein Genuss. Die berühmte Domstadt liegt nur 10 km vom Hotel entfernt, am Zusammenfluss von Donau, Inn und Ilz, inmitten von Wäldern. Der Dom beherbergt die größte Kirchenorgel der Welt. Kulturinteressierte finden hier ein vielfältiges Angebot an Museen, Galerien und historischen Sehenswürdigkeiten. Passau ist mit dem Auto in 22 Minuten zu erreichen.</p>
+    <span class="act-tag">Kultur · Sehenswürdigkeit · Stadtführung</span>
+  </div>
+</div>
+
+<!-- ACTIVITY 2: Schärding -->
+<div class="activity">
+  <div class="act-img reveal-scale">
+    <img src="act-schaerding.jpg" alt="Schärding Silberzeile">
+    <div class="act-dist">Entfernung: <span>10 Min. zu Fuß</span></div>
+  </div>
+  <div class="act-text reveal">
+    <div class="act-num">02</div>
+    <h2 class="act-title">Schärding — Österreichische <em>Barockstadt</em></h2>
+    <p class="act-body">Die österreichische Barockstadt Schärding liegt nur einen 10-minütigen Spaziergang vom Hotel entfernt, gleich hinter der Innbrücke. Die farbenprächtige Silberzeile — ein beeindruckendes Ensemble barocker Bürgerhäuser mit Schweifgiebeln — zählt zu den schönsten Plätzen Österreichs. Im Sommer laden zahlreiche Cafés und Restaurants zum Verweilen ein.</p>
+    <span class="act-tag">Österreich · Barockarchitektur · Kulinarik</span>
+  </div>
+</div>
+
+<!-- ACTIVITY 3: Radfahren & Wandern -->
+<div class="activity">
+  <div class="act-img reveal-scale">
+    <img src="act-radfahren.jpg" alt="Radfahren am Inn">
+    <div class="act-dist">Entfernung: <span>direkt ab Hotel</span></div>
+  </div>
+  <div class="act-text reveal">
+    <div class="act-num">03</div>
+    <h2 class="act-title">Radfahren & <em>Wandern</em></h2>
+    <p class="act-body">Ob passionierter Wanderer, entspannter Radfahrer oder professioneller Radsportler — rund um Neuhaus am Inn findet jeder die perfekte Route. Auf 150 km präparierten Rad- und Wanderwegen können Sie die ausgedehnten Moor- und Wiesenflächen des Europaschutzgebietes „Unterer Inn" bequem erkunden. Hier leben 280 Vogelarten, einige davon aus südlichen Ländern. Die Wege starten direkt ab dem Hotel.</p>
+    <span class="act-tag">Natur · Sport · Vogelbeobachtung</span>
+  </div>
+</div>
+
+<!-- ACTIVITY 4: Bad Füssing -->
+<div class="activity">
+  <div class="act-img reveal-scale">
+    <img src="act-badfuessing.jpg" alt="Bad Füssing Therme">
+    <div class="act-dist">Entfernung: <span>ca. 20 km</span></div>
+  </div>
+  <div class="act-text reveal">
+    <div class="act-num">04</div>
+    <h2 class="act-title">Bad Füssing — Europas größter <em>Kurort</em></h2>
+    <p class="act-body">Bad Füssing, Europas größter Kurort, ist nur wenige Kilometer vom Hotel entfernt. Wer Ruhe und Entspannung sucht, findet hier viele Möglichkeiten, sich von der Hektik des Alltags zu erholen. Das Bäderdreieck Bad Füssing, Bad Griesbach und Bad Birnbach bietet Thermalbäder, Wellness-Angebote und Kureinrichtungen für jeden Geschmack — ideal für einen entspannten Tagesausflug.</p>
+    <span class="act-tag">Wellness · Therme · Entspannung</span>
+  </div>
+</div>
+
+<!-- ACTIVITY 5: Kanu & Rafting -->
+<div class="activity">
+  <div class="act-img reveal-scale">
+    <img src="act-kanu.jpg" alt="Kanufahren am Inn">
+    <div class="act-dist">Entfernung: <span>direkt ab Hotel</span></div>
+  </div>
+  <div class="act-text reveal">
+    <div class="act-num">05</div>
+    <h2 class="act-title">Bootsfahrten, Rafting & <em>Kanuwandern</em></h2>
+    <p class="act-body">Der Verein Dschungelcamp Neuhaus ist Veranstalter von Kanutouren und Raftingfahrten direkt auf dem Inn. Die Schlauchbootfahrten auf den niederbayerischen Wasserstraßen — Donau, Inn, Ilz und Rott — rund um Passau und Neuhaus sind für alle Altersgruppen geeignet. Auf ruhigen Gewässern entdecken Sie die Natur aus einer ganz anderen Perspektive. Reservierungen unter <strong>www.dschungelcamp-neuhaus.de</strong></p>
+    <span class="act-tag">Wassersport · Familie · Abenteuer</span>
+  </div>
+</div>
+
+<!-- ACTIVITY 6: Schloss Neuhaus -->
+<div class="activity">
+  <div class="act-img reveal-scale">
+    <img src="act-schloss.jpg" alt="Schloss Neuhaus am Inn">
+    <div class="act-dist">Entfernung: <span>in der Ortschaft</span></div>
+  </div>
+  <div class="act-text reveal">
+    <div class="act-num">06</div>
+    <h2 class="act-title">Schloss Neuhaus <em>am Inn</em></h2>
+    <p class="act-body">Das malerische Schloss Neuhaus liegt direkt in der Ortschaft und spiegelt sich wunderschön im ruhigen Wasser des Inn. Das Barockschloss ist ein beeindruckendes Zeugnis der Geschichte der Region und bietet eine traumhafte Kulisse für einen Spaziergang entlang des Flussufers. Die Gaststätten und Brauereien in den drei Dörfern Neuhaus am Inn, Mittich und Vornbach halten beste Brotzeiten für Sie bereit.</p>
+    <span class="act-tag">Geschichte · Architektur · Spaziergang</span>
+  </div>
+</div>
+
+<!-- ACTIVITY 7: Golf -->
+<div class="activity">
+  <div class="act-img reveal-scale">
+    <img src="act-golf.jpg" alt="Golf Bad Griesbach">
+    <div class="act-dist">Entfernung: <span>ca. 30 km</span></div>
+  </div>
+  <div class="act-text reveal">
+    <div class="act-num">07</div>
+    <h2 class="act-title">Golf — Europas größte <em>Golfregion</em></h2>
+    <p class="act-body">Golfer haben Europas größte Golfregion gleich nebenan. Bad Griesbach, nur etwa 30 km vom Hotel entfernt, beherbergt mehrere international renommierte Golfplätze inmitten einer herrlichen Landschaft. Die Region gilt als eines der bedeutendsten Golfreiseziele Europas und bietet Anlagen für alle Spielstärken — vom Anfänger bis zum Turnierspieler.</p>
+    <span class="act-tag">Golf · Sport · Bad Griesbach</span>
+  </div>
+</div>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="cta-band-text">
+    <h2>Bereit für Ihren <em>Aufenthalt?</em></h2>
+    <p>Buchen Sie direkt online — Bestpreisgarantie inklusive.</p>
+  </div>
+  <div class="cta-btns">
+    <a href="https://hotel-alte-innbrucke.pynbooking.direct/" target="_blank" class="btn-gold">Jetzt Buchen</a>
+    <a href="#" class="btn-outline" onclick="openVideo();return false;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+      Check In Video
+    </a>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="contact">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <p class="eyebrow">Contact us</p>
+      <h2 style="font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:300; color:var(--deep-forest);">Explore the hotel's prime <em style="font-style:italic; color:var(--gold);">location</em></h2>
+      <p>Near the Austria border and Passau.</p>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div>
+            <div class="contact-lbl">Email</div>
+            <div class="contact-val"><a href="mailto:rezeption@hotel-neuhausinn.de">rezeption@hotel-neuhausinn.de</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div>
+            <div class="contact-lbl">Tel</div>
+            <div class="contact-val"><a href="tel:+4985039233">+49 85 03 92 33 0</a></div>
+            <div class="contact-val"><a href="tel:+491702383244">+49 170 23 83 244</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+          <div>
+            <div class="contact-lbl">WhatsApp</div>
+            <div class="contact-val"><a href="https://wa.me/491702383244">+49 170 23 83 244</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-right">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.9594688696166!2d13.420792099999998!3d48.457307199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47745c80a96c7595%3A0x682f0779f1fc7bf9!2sHotel%20Alte%20Innbr%C3%BCcke!5e0!3m2!1sde!2sde!4v1705157594483" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Karte"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+
+
+<!-- REVIEWS CAROUSEL -->
+<section class="carousel-section">
+  <p class="eyebrow">Guest Reviews</p>
+  <h2 class="sec-title">Was unsere Gäste <em>sagen</em></h2>
+  <div class="carousel-outer">
+    <div class="carousel-inner running" id="carouselInner">
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Einfacher Self-Check-in mit Türcode, sehr sauberes und geräumiges Zimmer mit Balkon, wunderschöne Landschaft, frische Luft. Die Damen beim Frühstück waren sehr herzlich und freundlich. Ich komme definitiv wieder!"</p><div class="rev-author">Florentina Nuri</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Sehr schönes Hotel, tolle ruhige Lage, toller Service. Die Dame des Hotels hat sogar nach 22:00 Uhr noch ans Telefon gegangen und ein Zimmer für uns bereitgestellt."</p><div class="rev-author">Satka Cosic</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Sehr freundliches rumänisches Personal. Sehr saubere Zimmer, mit allem ausgestattet, was man braucht, und das Frühstück war sehr lecker. Herzlichen Glückwunsch für alles, was Sie tun!"</p><div class="rev-author">Diana-Catalina Hartie</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Schlicht, aber hat alles, was man für einen Kurzaufenthalt braucht – sauberes Zimmer, bequeme Betten, gutes Frühstück. Self-Check-in und digitales Türschloss haben einwandfrei funktioniert."</p><div class="rev-author">Ádám Sipos</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Tolle Lage, komfortable geräumige Zimmer, sauber und gemütlich. Das wird immer unser Ort für Roadtrips sein. Definitiv ein Ort, zu dem man immer wieder zurückkommt."</p><div class="rev-author">Catalin Mosh</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Großes Studio für Familie mit 4 Personen + Hund, mit allen nötigen Annehmlichkeiten. Sehr gutes Preis-Leistungs-Verhältnis. Autobahnnähe und Zimmer-/Terrassenblick auf den Fluss."</p><div class="rev-author">Petros Prokis</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Das Zimmer war toll, die Betten sehr bequem. Wir hatten auch eine Küchenzeile mit Kochplatte, Wasserkocher und eigenem Kühlschrank. Das Personal ist äußerst freundlich und hilfsbereit."</p><div class="rev-author">Gerry Gosi</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Ein hervorragendes Hotel mit idyllischer und ruhiger Lage, dennoch nah an der Autobahn. Das Zimmer war sehr sauber und elegant eingerichtet. Das Frühstücksbuffet ist reichhaltig."</p><div class="rev-author">Paul Banut</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Einfacher Self-Check-in mit Türcode, sehr sauberes und geräumiges Zimmer mit Balkon, wunderschöne Landschaft, frische Luft. Die Damen beim Frühstück waren sehr herzlich und freundlich. Ich komme definitiv wieder!"</p><div class="rev-author">Florentina Nuri</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Sehr schönes Hotel, tolle ruhige Lage, toller Service. Die Dame des Hotels hat sogar nach 22:00 Uhr noch ans Telefon gegangen und ein Zimmer für uns bereitgestellt."</p><div class="rev-author">Satka Cosic</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Sehr freundliches rumänisches Personal. Sehr saubere Zimmer, mit allem ausgestattet, was man braucht, und das Frühstück war sehr lecker. Herzlichen Glückwunsch für alles, was Sie tun!"</p><div class="rev-author">Diana-Catalina Hartie</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Schlicht, aber hat alles, was man für einen Kurzaufenthalt braucht – sauberes Zimmer, bequeme Betten, gutes Frühstück. Self-Check-in und digitales Türschloss haben einwandfrei funktioniert."</p><div class="rev-author">Ádám Sipos</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Tolle Lage, komfortable geräumige Zimmer, sauber und gemütlich. Das wird immer unser Ort für Roadtrips sein. Definitiv ein Ort, zu dem man immer wieder zurückkommt."</p><div class="rev-author">Catalin Mosh</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Großes Studio für Familie mit 4 Personen + Hund, mit allen nötigen Annehmlichkeiten. Sehr gutes Preis-Leistungs-Verhältnis. Autobahnnähe und Zimmer-/Terrassenblick auf den Fluss."</p><div class="rev-author">Petros Prokis</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Das Zimmer war toll, die Betten sehr bequem. Wir hatten auch eine Küchenzeile mit Kochplatte, Wasserkocher und eigenem Kühlschrank. Das Personal ist äußerst freundlich und hilfsbereit."</p><div class="rev-author">Gerry Gosi</div><div class="rev-rating">5/5 · Google</div></div>
+      <div class="rev-slide"><div class="rev-stars">★★★★★</div><p class="rev-quote">"Ein hervorragendes Hotel mit idyllischer und ruhiger Lage, dennoch nah an der Autobahn. Das Zimmer war sehr sauber und elegant eingerichtet. Das Frühstücksbuffet ist reichhaltig."</p><div class="rev-author">Paul Banut</div><div class="rev-rating">5/5 · Google</div></div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">© Hotel Alte Innbrücke am Inn</div>
+    <ul class="footer-links">
+      <li><a href="de-startseite.html">Startseite</a></li>
+      <li><a href="de-zimmer.html">Zimmer</a></li>
+      <li><a href="de-aktivitat.html">Aktivität</a></li>
+      <li><a href="de-kontakt.html">Kontakt</a></li>
+      <li><a href="de-checkin.html">Check-In</a></li>
+      <li><a href="de-impressum.html">Impressum</a></li>
+      <li><a href="de-datenschutz.html">Datenschutz</a></li>
+    </ul>
+        <div class="footer-social">
+      <a href="https://www.tiktok.com/@hotelneuhausinn" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.13a8.16 8.16 0 0 0 4.77 1.52V7.2a4.85 4.85 0 0 1-1-.51z"/></svg>
+        TikTok
+      </a>
+      <a href="https://www.facebook.com/share/1E4TmDfdnw/?mibextid=wwXIfr" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        Facebook
+      </a>
+    </div>
+    <div class="lang-switcher">
+      <a href="de-aktivitat.html" class="active">DE</a>
+      <a href="en-activities.html">EN</a>
+      <a href="ro-activitati.html">RO</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- VIDEO MODAL -->
+<div class="vmodal" id="vmodal" onclick="closeVideo()">
+  <div class="vmodal-inner" onclick="event.stopPropagation()">
+    <button class="vmodal-close" onclick="closeVideo()">✕</button>
+    <iframe id="vframe" src="" title="Check In Video" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script>
+  function acceptCookies(){
+    try{ localStorage.setItem('cookieConsent','yes'); } catch(e){}
+    var b = document.getElementById('cookieBanner');
+    if(b) b.style.display='none';
+  }
+  function declineCookies(){
+    try{ localStorage.setItem('cookieConsent','no'); } catch(e){}
+    var b = document.getElementById('cookieBanner');
+    if(b) b.style.display='none';
+  }
+  try{
+    if(localStorage.getItem('cookieConsent')){
+      var b = document.getElementById('cookieBanner');
+      if(b) b.style.display='none';
+    }
+  } catch(e){}
+  function openVideo() {
+    document.getElementById('vmodal').classList.add('active');
+    document.getElementById('vframe').src = 'https://www.youtube.com/embed/mJDD9snN5qA?autoplay=1&si=Bu8JmOTmrXuSvhRR';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeVideo() {
+    document.getElementById('vmodal').classList.remove('active');
+    document.getElementById('vframe').src = '';
+    document.body.style.overflow = '';
+  }
+</script>
+<script>
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => revealObserver.observe(el));
+  var ham = document.getElementById('hamburger');
+  var mob = document.getElementById('mobileMenu');
+  if(ham && mob){
+    ham.onclick = function(){
+      var isOpen = mob.style.display === 'flex';
+      mob.style.display = isOpen ? 'none' : 'flex';
+      ham.classList.toggle('open', !isOpen);
+      document.body.style.overflow = isOpen ? '' : 'hidden';
+    };
+  }
+  function closeMobileMenu(){
+    if(mob) mob.style.display = 'none';
+    if(ham) ham.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+</script>
+
+<!-- COOKIE -->
+<div class="cookie-banner" id="cookieBanner">
+  <span class="cookie-text">Wir verwenden Cookies für die beste Erfahrung auf unserer Website. <a href="engleza-privacy.html">Datenschutz</a></span>
+  <div class="cookie-btns">
+    <button class="cookie-decline" onclick="declineCookies()">Ablehnen</button>
+    <button class="cookie-accept" onclick="acceptCookies()">Akzeptieren</button>
+  </div>
+</div>
+<script>
+
+  function acceptCookies(){
+    try{localStorage.setItem('cookieConsent','yes');}catch(e){}
+    var b=document.getElementById('cookieBanner');
+    if(b)b.style.display='none';
+  }
+  function declineCookies(){
+    try{localStorage.setItem('cookieConsent','no');}catch(e){}
+    var b=document.getElementById('cookieBanner');
+    if(b)b.style.display='none';
+  }
+  try{
+    if(localStorage.getItem('cookieConsent')){
+      var b=document.getElementById('cookieBanner');
+      if(b)b.style.display='none';
+    }
+  }catch(e){}
+
+  var ham=document.getElementById('hamburger');
+  var mob=document.getElementById('mobileMenu');
+  if(ham&&mob){
+    ham.onclick=function(){
+      var isOpen=mob.style.display==='flex';
+      mob.style.display=isOpen?'none':'flex';
+      ham.classList.toggle('open',!isOpen);
+      document.body.style.overflow=isOpen?'':'hidden';
+    };
+  }
+
+  function openVideo(){
+    var vm=document.getElementById('vmodal');
+    var vf=document.getElementById('vframe');
+    if(vm)vm.classList.add('active');
+    if(vf)vf.src='https://www.youtube.com/embed/mJDD9snN5qA?autoplay=1';
+    document.body.style.overflow='hidden';
+  }
+  function closeVideo(){
+    var vm=document.getElementById('vmodal');
+    var vf=document.getElementById('vframe');
+    if(vm)vm.classList.remove('active');
+    if(vf)vf.src='';
+    document.body.style.overflow='';
+  }
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeVideo();});
+
+</script>
+
+<!-- DESIGNED BY BAR -->
+<div style="background:#0f1a10; padding:1rem 2rem; display:flex; align-items:center; justify-content:center;">
+  <a href="https://www.velichi-luca.agency/" target="_blank" rel="noopener"
+     style="display:inline-flex; align-items:center; gap:0.6rem; text-decoration:none; font-family:'DM Sans',sans-serif; font-size:0.72rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:rgba(247,243,237,0.45); transition:color 0.2s;"
+     onmouseover="this.style.color='#D4AD77'" onmouseout="this.style.color='rgba(247,243,237,0.45)'">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 8 16 12 12 16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+    Designed by Luca &nbsp;·&nbsp; velichi-luca.agency
+  </a>
+</div>
+
+<a href="https://wa.me/491702383244" target="_blank" class="wa-btn" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+</body>

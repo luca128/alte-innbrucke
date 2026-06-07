@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.hotel-neuhausinn.de/sitemap.xml
+
+Disallow: /assets/

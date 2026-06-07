@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Alte Innbrücke Hotel</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --cream: #F7F3ED; --warm-white: #FDFAF6; --deep-forest: #1C2B1E; --forest: #2D4A32;
+  --gold: #B8945A; --gold-light: #D4AD77; --charcoal: #2A2A2A; --text-muted: #6B6456;
+  --border: rgba(44,35,20,0.12); --T: cubic-bezier(0.25,0.46,0.45,0.94);
+}
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { font-family: 'DM Sans', sans-serif; background: var(--warm-white); color: var(--cream); overflow-x: hidden; }
+nav { position:fixed; top:0; left:0; right:0; z-index:100; height:70px; padding:0 3rem; display:flex; align-items:center; justify-content:space-between; background:rgba(10,10,10,0.96); backdrop-filter:blur(14px); border-bottom:1px solid var(--border); }
+.nav-logo { font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-weight:600; color:var(--cream); text-decoration:none; letter-spacing:0.04em; }
+.nav-logo span { color:var(--gold); }
+.nav-center { display:flex; align-items:center; gap:2rem; list-style:none; }
+.nav-center a { font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:500; color:var(--charcoal); text-decoration:none; transition:color 0.2s; }
+.nav-center a:hover { color:var(--cream); }
+.nav-right { display:flex; align-items:center; gap:1rem; }
+.lang-switcher { display:flex; gap:0.4rem; }
+.lang-switcher a { font-size:0.7rem; color:var(--charcoal); text-decoration:none; padding:0.2rem 0.4rem; border:1px solid transparent; border-radius:2px; transition:all 0.2s; }
+.lang-switcher a:hover, .lang-switcher a.active { border-color:var(--gold); color:var(--cream); background:rgba(184,148,90,0.15); }
+.btn-book { background:var(--deep-forest); color:var(--cream); padding:0.5rem 1.3rem; font-size:0.75rem; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none; border-radius:2px; }
+.hamburger { display:none; margin-left:auto; flex-direction:column; gap:5px; cursor:pointer; padding:4px; background:none; border:none; z-index:200; }
+.hamburger span { display:block; width:24px; height:2px; background:var(--deep-forest); transition:all 0.3s; border-radius:2px; }
+.hamburger.open span:nth-child(1) { transform:rotate(45deg) translate(5px,5px); }
+.hamburger.open span:nth-child(2) { opacity:0; }
+.hamburger.open span:nth-child(3) { transform:rotate(-45deg) translate(5px,-5px); }
+.mobile-menu { display:none; position:fixed; inset:0; top:70px; background:var(--warm-white); z-index:99; flex-direction:column; padding:2rem; gap:0; overflow-y:auto; }
+.mobile-menu.open { display:flex; }
+.mobile-menu a { display:flex; align-items:center; justify-content:space-between; padding:1.2rem 0; font-size:1.1rem; font-weight:500; color:var(--cream); text-decoration:none; border-bottom:1px solid var(--border); }
+.mobile-menu a:last-child { border-bottom:none; }
+.mobile-menu a svg { width:16px; height:16px; color:var(--gold); }
+.mobile-menu-book { margin-top:2rem; background:var(--deep-forest); color:var(--cream) !important; padding:1rem 2rem; text-align:center; border-radius:2px; border:none !important; justify-content:center !important; }
+.mobile-menu-lang { display:flex; gap:1rem; margin-top:1rem; padding-top:1rem; border-top:1px solid var(--border); }
+.mobile-menu-lang a { font-size:0.8rem; color:var(--charcoal); text-decoration:none; padding:0.3rem 0.6rem; border:1px solid transparent; border-radius:2px; }
+.mobile-menu-lang a.active { border-color:var(--gold); color:var(--cream); }
+.page-header { padding-top:70px; background:var(--deep-forest); }
+.page-header-inner { padding:5rem 5rem 4rem; }
+.eyebrow { font-size:0.68rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold-light); margin-bottom:0.75rem; }
+.page-title { font-family:'Cormorant Garamond',serif; font-size:clamp(2.5rem,4vw,4rem); font-weight:300; color:var(--cream); line-height:1.1; }
+.page-title em { font-style:italic; color:var(--gold-light); }
+.legal-content { max-width:800px; margin:0 auto; padding:5rem; }
+.legal-content h2 { font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:300; color:var(--cream); margin-top:2.5rem; margin-bottom:1rem; border-bottom:1px solid var(--border); padding-bottom:0.5rem; }
+.legal-content h2:first-child { margin-top:0; }
+.legal-content h3 { font-size:1rem; font-weight:500; color:var(--cream); margin-top:1.5rem; margin-bottom:0.5rem; }
+.legal-content p { font-size:0.9rem; line-height:1.9; color:var(--cream); margin-bottom:0.75rem; }
+.legal-content ul { margin:0.75rem 0 0.75rem 1.5rem; }
+.legal-content ul li { font-size:0.9rem; line-height:1.9; color:var(--cream); margin-bottom:0.25rem; }
+.legal-content a { color:var(--cream); text-decoration:none; border-bottom:1px solid rgba(45,74,50,0.3); }
+.legal-content a:hover { border-color:var(--cream); }
+footer { background:var(--charcoal); padding:2.5rem 5rem; }
+.footer-inner { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.5rem; }
+.footer-brand { font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:300; color:var(--cream); }
+.footer-links { display:flex; gap:2rem; list-style:none; }
+.footer-links a { font-size:0.75rem; color:rgba(247,243,237,0.4); text-decoration:none; }
+.footer-links a:hover { color:var(--cream); }
+.footer-social { display:flex; gap:1rem; align-items:center; }
+.footer-social a { display:inline-flex; align-items:center; gap:0.4rem; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:rgba(247,243,237,0.4); text-decoration:none; transition:color 0.2s; }
+.footer-social a:hover { color:var(--gold-light); }
+.footer-social svg { width:14px; height:14px; }
+.footer-inner .lang-switcher a { color:rgba(247,243,237,0.5); border-color:transparent; }
+.footer-inner .lang-switcher a:hover, .footer-inner .lang-switcher a.active { color:var(--cream); border-color:var(--gold); background:transparent; }.cookie-banner { position:fixed; bottom:0; left:0; right:0; z-index:600; background:var(--charcoal); color:rgba(247,243,237,0.8); padding:1.2rem 2rem; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap; border-top:1px solid rgba(184,148,90,0.2); font-size:0.82rem; line-height:1.6; }
+.cookie-text a { color:var(--gold-light); }
+.cookie-btns { display:flex; gap:0.75rem; flex-shrink:0; }
+.cookie-accept { background:var(--gold); color:var(--cream); border:none; padding:0.6rem 1.4rem; font-size:0.78rem; font-weight:500; letter-spacing:0.06em; text-transform:uppercase; cursor:pointer; border-radius:2px; }
+.cookie-decline { background:none; color:rgba(247,243,237,0.5); border:1px solid rgba(247,243,237,0.2); padding:0.6rem 1.2rem; font-size:0.78rem; cursor:pointer; border-radius:2px; }
+@media(max-width:1024px) {
+  nav { padding:0 1.5rem; }
+  .nav-center, .nav-right { display:none !important; }
+  .hamburger { display:flex; }
+  .page-header-inner { padding:3rem 1.5rem 2rem; }
+  .legal-content { padding:3rem 1.5rem; }
+  footer { padding:2rem 1.5rem; }
+  .footer-inner { flex-direction:column; align-items:flex-start; gap:1.5rem; }
+  .footer-links { flex-wrap:wrap; gap:1rem; }
+}
+.wa-btn { position:fixed; bottom:1.5rem; right:1.5rem; z-index:500; width:auto; height:56px; border-radius:28px; background:#25D366; display:flex; align-items:center; gap:0.6rem; padding:0 1.2rem 0 0.9rem; box-shadow:0 4px 20px rgba(37,211,102,0.4); text-decoration:none; transition:transform 0.2s; }
+.wa-btn:hover { transform:scale(1.04); }
+.wa-btn svg { width:28px; height:28px; fill:#fff; flex-shrink:0; }
+.wa-btn span { font-family:'DM Sans',sans-serif; font-size:0.82rem; font-weight:500; color:#fff; letter-spacing:0.02em; white-space:nowrap; }
+
+
+/* ── DARK THEME OVERRIDES ── */
+body { background:#111111 !important; color:#E8F5E9 !important; }
+
+/* Nav */
+nav { background:rgba(17,17,17,0.96) !important; border-bottom-color:rgba(76,175,80,0.2) !important; }
+.nav-logo { color:#E8F5E9 !important; }
+.nav-logo span { color:#4CAF50 !important; }
+.nav-center a { color:#A5D6A7 !important; }
+.nav-center a:hover, .nav-center a.active { color:#81C784 !important; }
+.mobile-menu { background:#111111 !important; }
+.mobile-menu a { color:#E8F5E9 !important; border-bottom-color:rgba(76,175,80,0.15) !important; }
+.btn-book { background:#1A2B1A !important; color:#81C784 !important; border:1px solid #4CAF50 !important; }
+
+/* Toate sectiunile cu fundal deschis -> inchis */
+.rooms-section, .room-section, .faq-section, .about-section, .wichtig-section,
+.contact-strip, .contact-inner, .contact-left, .info-section, .steps-section,
+.cta-band, .cta-bottom, .checkin-cta, .intro-strip, .page-header,
+section, .section, [class*="-section"], .legal-content,
+.w-section, .loc-section { background:#111111 !important; }
+
+/* Alternating sections */
+.room-section:nth-child(odd) { background:#111111 !important; }
+.room-section:nth-child(even) { background:#0F1F0F !important; }
+
+/* Text - TOATE trebuie sa fie deschise */
+h1, h2, h3, h4, h5, h6,
+.sec-title, .page-title, .room-title, .contact-title,
+.hero-title, .act-title, .step-title, .dir-title,
+.faq-q, .am-label, .room-num, .eyebrow, .sec-eyebrow,
+.card-label, .c-lbl { color:#E8F5E9 !important; }
+
+p, span, div, li,
+.sec-body, .page-sub, .hero-sub, .act-body, .step-desc,
+.faq-a, .loc-text, .dir-desc, .r-text, .info-text,
+.card-sub, .c-val, .about-block p, .legal-content p,
+.legal-content li, .rev-quote { color:#C8E6C9 !important; }
+
+em { color:#81C784 !important; }
+
+/* Borders */
+.faq-item { border-bottom-color:rgba(76,175,80,0.2) !important; }
+.am-cell { border-color:rgba(76,175,80,0.2) !important; }
+.info-item { border-bottom-color:rgba(76,175,80,0.15) !important; }
+
+/* Icons */
+.am-cell svg, .c-icon svg { color:#4CAF50 !important; }
+
+/* Buttons */
+.btn-dark, .btn-gold { background:#2E7D32 !important; color:#E8F5E9 !important; }
+.btn-gold:hover { background:#388E3C !important; }
+.btn-outline { border-color:#4CAF50 !important; color:#81C784 !important; }
+
+/* Footer */
+footer { background:#0A0A0A !important; }
+.footer-brand { color:#E8F5E9 !important; }
+.footer-links a { color:#A5D6A7 !important; }
+.footer-links a:hover { color:#E8F5E9 !important; }
+
+/* Designed by bar */
+[style*="background:#0f1a10"] { background:#0A0A0A !important; }
+
+/* Cookie banner */
+.cookie-banner { background:#0A0A0A !important; }
+
+/* Photo placeholders */
+.photo-placeholder { background:#1A2B1A !important; }
+.photo-placeholder span { color:#A5D6A7 !important; }
+
+/* Time boxes in contact/checkin */
+.time-label { color:#A5D6A7 !important; }
+.time-val { color:#E8F5E9 !important; }
+.time-note { color:#81C784 !important; }
+
+/* Step numbers */
+.step-num { color:rgba(76,175,80,0.3) !important; }
+
+/* Legal pages */
+.legal-content h2 { color:#E8F5E9 !important; border-bottom-color:rgba(76,175,80,0.2) !important; }
+.legal-content a { color:#81C784 !important; }
+
+/* Cards in contact */
+.card { background:#0F1F0F !important; border-color:rgba(76,175,80,0.2) !important; }
+.card-val { color:#E8F5E9 !important; }
+.card-val a { color:#81C784 !important; }
+
+/* Reminder/wichtig section */
+.checkin-reminder { background:#0F1F0F !important; }
+.reminder-right { background:#0A0A0A !important; }
+
+/* Arrival block */
+.arrival-block { background:#0F1F0F !important; border-color:rgba(76,175,80,0.2) !important; }
+.arrival-address span { color:#E8F5E9 !important; }
+.arrival-phone a { color:#81C784 !important; }
+
+/* Social section */
+.social-section { background:#0F1F0F !important; }
+
+
+/* ── VISIBILITY FIXES ── */
+/* Strong/bold text in WICHTIG - verde pe verde fix */
+.w-text strong, .r-text strong, .wichtig-item strong,
+.reminder-item strong, li strong, p strong { 
+  color:#E8F5E9 !important; 
+}
+
+/* Btn secondary / outline - invizibil pe dark */
+.btn-secondary, .btn-outline, .btn-video, .btn-video-nav {
+  border-color:#4CAF50 !important;
+  color:#81C784 !important;
+  background:rgba(76,175,80,0.1) !important;
+}
+.btn-secondary:hover, .btn-outline:hover {
+  background:rgba(76,175,80,0.25) !important;
+  color:#E8F5E9 !important;
+}
+
+/* Check In Video button pe hero */
+.btn-video { 
+  border:1px solid #4CAF50 !important; 
+  color:#81C784 !important;
+  padding:0.8rem 1.8rem !important;
+  border-radius:2px !important;
+}
+.btn-video svg { color:#4CAF50 !important; }
+.btn-video-nav svg { color:#4CAF50 !important; }
+
+/* Orice text verde inchis pe fond verde inchis */
+.w-text, .r-text, .wichtig-item, .reminder-item div {
+  color:#C8E6C9 !important;
+}
+
+/* NICHT / NOT bold highlight */
+strong { color:#E8F5E9 !important; }
+
+
+/* ── MOBILE MENU VISIBILITY ── */
+.mobile-menu { background:#0A0A0A !important; border-top:1px solid rgba(76,175,80,0.3) !important; }
+.mobile-menu a { color:#E8F5E9 !important; font-size:1.1rem !important; border-bottom-color:rgba(76,175,80,0.2) !important; }
+.mobile-menu a svg { color:#4CAF50 !important; }
+.mobile-menu-book { background:#2E7D32 !important; color:#E8F5E9 !important; }
+.mobile-menu-lang a { color:#A5D6A7 !important; border-color:transparent !important; }
+.mobile-menu-lang a.active { border-color:#4CAF50 !important; color:#E8F5E9 !important; }
+.hamburger span { background:#E8F5E9 !important; }
+
+
+/* ── LANG SWITCHER VISIBILITY ── */
+.lang-switcher a { color:#A5D6A7 !important; border-color:transparent !important; }
+.lang-switcher a.active { 
+  border-color:#4CAF50 !important; 
+  color:#E8F5E9 !important; 
+  background:rgba(76,175,80,0.25) !important;
+  font-weight:600 !important;
+}
+.lang-switcher a:hover { 
+  border-color:#81C784 !important; 
+  color:#E8F5E9 !important;
+  background:rgba(76,175,80,0.15) !important;
+}
+.footer-inner .lang-switcher a { color:#A5D6A7 !important; }
+.footer-inner .lang-switcher a.active { 
+  border-color:#4CAF50 !important; 
+  color:#E8F5E9 !important;
+  background:rgba(76,175,80,0.25) !important;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="de-startseite.html" class="nav-logo">Alte Innbrücke <span>Hotel</span></a>
+  <ul class="nav-center">
+    <li><a href="en-home.html">Home</a></li>
+    <li><a href="en-rooms.html">Rooms</a></li>
+    <li><a href="en-activities.html">Activities</a></li>
+    <li><a href="en-contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <a href="de-datenschutz.html">DE</a>
+      <a href="en-privacy.html" class="active">EN</a>
+      <a href="ro-confidentialitate.html">RO</a>
+    </div>
+    <a href="https://hotel-alte-innbrucke.pynbooking.direct/" target="_blank" class="btn-book">Book Now</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="de-startseite.html">Home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+  <a href="en-rooms.html">Rooms <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+  <a href="en-activities.html">Activities <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+  <a href="en-contact.html">Contact <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+  <a href="https://hotel-alte-innbrucke.pynbooking.direct/" target="_blank" class="mobile-menu-book">Book Now</a>
+  <div class="mobile-menu-lang">
+    <a href="de-datenschutz.html">DE</a>
+    <a href="en-privacy.html" class="active">EN</a>
+    <a href="ro-confidentialitate.html">RO</a>
+  </div>
+</div>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="eyebrow">Legal</p>
+    <h1 class="page-title">Privacy <em>Policy</em></h1>
+  </div>
+</div>
+
+<div class="legal-content">
+  <h2>1. Controller</h2>
+  <p>The controller within the meaning of the General Data Protection Regulation (GDPR) is:</p>
+  <p>
+    <strong>TIMWALD GmbH</strong><br>
+    Hotel Alte Innbrücke<br>
+    Finkenweg 7, 94152 Neuhaus a. Inn<br>
+    Telefon: +49 8503 92330<br>
+    E-Mail: <a href="mailto:rezeption@hotel-neuhausinn.de">rezeption@hotel-neuhausinn.de</a>
+  </p>
+
+  <h2>2. Collection and Storage of Personal Data</h2>
+  <p>When you visit our website, general information is automatically collected. This information (server log files) includes the type of web browser, the operating system used, the domain name of your internet service provider, and similar data. This is exclusively information that does not allow any conclusions to be drawn about your person.</p>
+
+  <h2>3. Cookies</h2>
+  <p>Our website uses cookies. These are small text files that your web browser stores on your device. Cookies help us make our service more user-friendly, effective, and secure.</p>
+  <p>We use only one technically necessary cookie that stores your cookie consent (cookieConsent). This cookie contains no personal data and is stored locally in your browser.</p>
+  <p>You can prevent cookies from being stored by adjusting your browser settings accordingly. However, we would like to point out that in this case you may not be able to use all functions of this website to their full extent.</p>
+
+  <h2>4. Google Maps</h2>
+  <p>This website uses Google Maps, a map service provided by Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, via an API. In order to use the functions of Google Maps, it is necessary to save your IP address. This information is generally transferred to a Google server in the USA and stored there.</p>
+  <p>The use of Google Maps is in the interest of making our online services visually appealing and making it easy to find the locations we indicate on the website. This constitutes a legitimate interest within the meaning of Art. 6 para. 1 lit. f GDPR.</p>
+  <p>More information on how Google handles user data can be found in Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>.</p>
+
+  <h2>5. YouTube</h2>
+  <p>Our website uses plugins from the YouTube site operated by Google (YouTube LLC, 901 Cherry Ave., San Bruno, CA 94066, USA). When you visit one of our pages equipped with a YouTube plugin, a connection to YouTube servers is established.</p>
+  <p>YouTube is informed which of our pages you have visited. If you are logged into your YouTube account, you allow YouTube to assign your browsing behavior directly to your personal profile. You can prevent this by logging out of your YouTube account.</p>
+  <p>Further information on how YouTube handles user data can be found in YouTube's privacy policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>.</p>
+
+  <h2>6. WhatsApp</h2>
+  <p>Our website includes a WhatsApp contact button. When you click this button, you will be redirected to the WhatsApp application. WhatsApp is a service of WhatsApp Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Ireland. When using WhatsApp, WhatsApp's privacy policy applies: <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank">https://www.whatsapp.com/legal/privacy-policy-eea</a>.</p>
+
+  <h2>7. Contact by Email or Phone</h2>
+  <p>If you contact us by email or phone, your details will be stored for the purpose of processing the inquiry and in case of follow-up questions. We will not pass on this data without your consent.</p>
+
+  <h2>8. Your Rights</h2>
+  <p>You have the following rights with regard to the personal data concerning you:</p>
+  <ul>
+    <li>Right of access (Art. 15 GDPR)</li>
+    <li>Right to rectification (Art. 16 GDPR)</li>
+    <li>Right to erasure (Art. 17 GDPR)</li>
+    <li>Right to restriction of processing (Art. 18 GDPR)</li>
+    <li>Right to data portability (Art. 20 GDPR)</li>
+    <li>Right to object to processing (Art. 21 GDPR)</li>
+  </ul>
+  <p>You also have the right to lodge a complaint with a data protection supervisory authority regarding our processing of your personal data. The competent supervisory authority is the Bavarian State Commissioner for Data Protection.</p>
+
+  <h2>9. Currency and Amendment of this Privacy Policy</h2>
+  <p>This privacy policy is currently valid and was last updated in June 2025. As our website develops or due to changes in legal or regulatory requirements, it may be necessary to amend this privacy policy.</p>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">© Hotel Alte Innbrücke am Inn</div>
+    <ul class="footer-links">
+      <li><a href="en-home.html">Home</a></li>
+      <li><a href="en-rooms.html">Rooms</a></li>
+      <li><a href="en-activities.html">Activities</a></li>
+      <li><a href="en-contact.html">Contact</a></li>
+      <li><a href="en-checkin.html">Check-In</a></li>
+      <li><a href="en-legal-notice.html">Legal Notice</a></li>
+      <li><a href="en-privacy.html">Privacy Policy</a></li>
+    </ul>
+    <div class="footer-social">
+      <a href="https://www.tiktok.com/@hotelneuhausinn" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.13a8.16 8.16 0 0 0 4.77 1.52V7.2a4.85 4.85 0 0 1-1-.51z"/></svg>
+        TikTok
+      </a>
+      <a href="https://www.facebook.com/share/1E4TmDfdnw/?mibextid=wwXIfr" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        Facebook
+      </a>
+    </div>
+    <div class="lang-switcher">
+      <a href="de-datenschutz.html">DE</a>
+      <a href="en-privacy.html" class="active">EN</a>
+      <a href="ro-confidentialitate.html">RO</a>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner">
+  <span class="cookie-text">We use cookies to ensure the best experience on our website. <a href="en-privacy.html">Privacy Policy</a></span>
+  <div class="cookie-btns">
+    <button class="cookie-decline" onclick="declineCookies()">Decline</button>
+    <button class="cookie-accept" onclick="acceptCookies()">Accept</button>
+  </div>
+</div>
+<script>
+  function acceptCookies(){ try{ localStorage.setItem('cookieConsent','yes'); }catch(e){} var b=document.getElementById('cookieBanner'); if(b) b.style.display='none'; }
+  function declineCookies(){ try{ localStorage.setItem('cookieConsent','no'); }catch(e){} var b=document.getElementById('cookieBanner'); if(b) b.style.display='none'; }
+  try{ if(localStorage.getItem('cookieConsent')){ var b=document.getElementById('cookieBanner'); if(b) b.style.display='none'; } }catch(e){}
+  var ham=document.getElementById('hamburger'); var mob=document.getElementById('mobileMenu');
+  if(ham && mob){ ham.onclick=function(){ var isOpen=mob.style.display==='flex'; mob.style.display=isOpen?'none':'flex'; ham.classList.toggle('open',!isOpen); document.body.style.overflow=isOpen?'':'hidden'; }; }
+</script>
+
+<!-- DESIGNED BY BAR -->
+<div style="background:#0f1a10; padding:1rem 2rem; display:flex; align-items:center; justify-content:center;">
+  <a href="https://www.velichi-luca.agency/" target="_blank" rel="noopener"
+     style="display:inline-flex; align-items:center; gap:0.6rem; text-decoration:none; font-family:'DM Sans',sans-serif; font-size:0.72rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:rgba(247,243,237,0.45); transition:color 0.2s;"
+     onmouseover="this.style.color='#D4AD77'" onmouseout="this.style.color='rgba(247,243,237,0.45)'">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 8 16 12 12 16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+    Designed by Luca &nbsp;·&nbsp; velichi-luca.agency
+  </a>
+</div>
+
+<a href="https://wa.me/491702383244" target="_blank" class="wa-btn" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+</body>
+</html>
