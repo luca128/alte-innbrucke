@@ -2,102 +2,199 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <!-- HOME -->
   <url>
-    <loc>https://www.hotel-neuhausinn.de/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/index.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/engleza-acasa.html"/>
+    <loc>https://www.hotel-neuhausinn.de/de-startseite.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-startseite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-home.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-acasa.html"/>
     <lastmod>2025-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.hotel-neuhausinn.de/germana-rooms.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/germana-rooms.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/engleza-rooms.html"/>
+    <loc>https://www.hotel-neuhausinn.de/en-home.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-startseite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-home.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-acasa.html"/>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.hotel-neuhausinn.de/ro-acasa.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-startseite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-home.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-acasa.html"/>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ROOMS -->
+  <url>
+    <loc>https://www.hotel-neuhausinn.de/de-zimmer.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-zimmer.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-rooms.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-camere.html"/>
     <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.hotel-neuhausinn.de/engleza-rooms.html</loc>
+    <loc>https://www.hotel-neuhausinn.de/en-rooms.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-zimmer.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-rooms.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-camere.html"/>
     <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.hotel-neuhausinn.de/germana-checkin.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/germana-checkin.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/engleza-checkin.html"/>
+    <loc>https://www.hotel-neuhausinn.de/ro-camere.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-zimmer.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-rooms.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-camere.html"/>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- CHECK-IN -->
+  <url>
+    <loc>https://www.hotel-neuhausinn.de/de-checkin.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-checkin.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-checkin.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-checkin.html"/>
     <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.hotel-neuhausinn.de/engleza-checkin.html</loc>
+    <loc>https://www.hotel-neuhausinn.de/en-checkin.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-checkin.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-checkin.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-checkin.html"/>
     <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.hotel-neuhausinn.de/germana-activities.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/germana-activities.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/engleza-activities.html"/>
+    <loc>https://www.hotel-neuhausinn.de/ro-checkin.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-checkin.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-checkin.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-checkin.html"/>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ACTIVITIES -->
+  <url>
+    <loc>https://www.hotel-neuhausinn.de/de-aktivitat.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-aktivitat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-activities.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-activitati.html"/>
     <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.hotel-neuhausinn.de/engleza-activities.html</loc>
+    <loc>https://www.hotel-neuhausinn.de/en-activities.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-aktivitat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-activities.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-activitati.html"/>
     <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.hotel-neuhausinn.de/germana-contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/germana-contact.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/engleza-contact.html"/>
+    <loc>https://www.hotel-neuhausinn.de/ro-activitati.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-aktivitat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-activities.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-activitati.html"/>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- CONTACT -->
+  <url>
+    <loc>https://www.hotel-neuhausinn.de/de-kontakt.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-contact.html"/>
     <lastmod>2025-06-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.hotel-neuhausinn.de/engleza-contact.html</loc>
+    <loc>https://www.hotel-neuhausinn.de/en-contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-contact.html"/>
     <lastmod>2025-06-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.hotel-neuhausinn.de/impressum.html</loc>
+    <loc>https://www.hotel-neuhausinn.de/ro-contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hotel-neuhausinn.de/de-kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-neuhausinn.de/en-contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-neuhausinn.de/ro-contact.html"/>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- LEGAL -->
+  <url>
+    <loc>https://www.hotel-neuhausinn.de/de-impressum.html</loc>
     <lastmod>2025-06-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://www.hotel-neuhausinn.de/datenschutz.html</loc>
+    <loc>https://www.hotel-neuhausinn.de/en-legal-notice.html</loc>
     <lastmod>2025-06-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://www.hotel-neuhausinn.de/legal-notice.html</loc>
+    <loc>https://www.hotel-neuhausinn.de/ro-mentiuni-legale.html</loc>
     <lastmod>2025-06-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://www.hotel-neuhausinn.de/privacy.html</loc>
+    <loc>https://www.hotel-neuhausinn.de/de-datenschutz.html</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.hotel-neuhausinn.de/en-privacy.html</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.hotel-neuhausinn.de/ro-confidentialitate.html</loc>
     <lastmod>2025-06-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
